@@ -3,9 +3,10 @@ Hecho por Jose Alvarez
 Impresor LCD 
 
 
-Entrada: Cada separada por coma donde el primer caracter sra el tamaño y el segundo los numeros a imprimir
-Ejemplo : 2,2
-Imprime 
+Entrada: Numeros separados por coma donde el primer caracter sera el tamaño y el segundo los numeros a imprimir
+Ejemplo : 2,2 dos es el tamaño e imprime 2 con ese tamaño
+Imprime->
+
   --
     |
     |
