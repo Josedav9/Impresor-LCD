@@ -7,8 +7,8 @@ Entrada: Numeros separados por coma donde el primer caracter sera el tamaño y e
 Ejemplo : 2,2 dos es el tamaño e imprime 2 con ese tamaño
 Imprime->
 
- __
-   |
- __|
-|
-|__
+   __
+     |
+   __|
+  |
+  |__
