@@ -1,14 +1,10 @@
 package impresorlcd;
-
-
 /**
  * 
  * @author Jose Alvarez
  *
  */
-public class Impresor {
-	//Instancia de la clase Numero 
-	Numero numero;
+public class Matriz {
 
 	/**
 	 * Metodo que se encarga de crear la matriz para su posterior impresion
@@ -20,7 +16,9 @@ public class Impresor {
 	 * 
 	 */
 	public String [][] crearMatriz(int size, String numeros){
-
+		
+		//Instancia de la clase Numero 
+		Numero numero;
 		int numeroFilas = 2*size+3;
 		int numeroColumnas = 2+size;
 		int totalColumnas = numeroColumnas*numeros.length();
@@ -32,6 +30,7 @@ public class Impresor {
 		numero.setNumeroFilas(numeroFilas);
 		String [][] matriz;
 		matriz = new String [numeroFilas][totalColumnas];
+
 
 		for (int i = 0; i < matriz.length; i++) {
 			for (int j = 0; j < matriz[0].length; j++) {
@@ -96,6 +95,25 @@ public class Impresor {
 
 		return nuevoNumero;
 
+	}
+	
+	/**
+	 * Metodo encargado de imprimir la matriz de numeros
+	 *  
+	 * @param size Tamaño de impresion de los numeros
+	 * @param cadena Cadena de numeros a imprimir
+	 * 
+	 */
+	public void imprimirMatriz(String[][] matriz){
+		
+		System.out.println("");
+		for (int i = 0; i < matriz.length; i++) {
+			for (int j = 0; j < matriz[0].length; j++) {
+				System.out.print(matriz[i][j]);
+			}
+			System.out.println("");
+		}
+		
 	}
 
 

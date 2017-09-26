@@ -337,6 +337,14 @@ public class Numero {
 	public void setNumeroFilas(int numeroFilas) {
 		this.numeroFilas = numeroFilas;
 	}
+	//GET numero columnas
+	public int getNumeroCol() {
+		return numeroCol;
+	}
+	//GET numero Filas
+	public int getNumeroFilas() {
+		return numeroFilas;
+	}
 
 }
 
