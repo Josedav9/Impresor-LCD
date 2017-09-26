@@ -16,7 +16,7 @@ public class Matriz {
 	 * 
 	 */
 	public String [][] crearMatriz(int size, String numeros){
-		
+
 		//Instancia de la clase Numero 
 		Numero numero;
 		int numeroFilas = 2*size+3;
@@ -34,12 +34,14 @@ public class Matriz {
 
 		for (int i = 0; i < matriz.length; i++) {
 			for (int j = 0; j < matriz[0].length; j++) {
+				//Determina en que momento cambia de numero
+				//Y por cual numero cambia
 				if((j)%(2+size) == 0){
 					puntoInicio = j;
 					siguienteNumero = puntoInicio/numeroColumnas;
 					numeroNuevo = cambiarNumero(siguienteNumero, numeros);
 				}
-
+				//Usa el nuevo numero para ir creandolo sobre la matriz
 				switch (numeroNuevo) {
 				case '1':
 					matriz[i][j] = numero.numeroUno(j, i, puntoInicio);

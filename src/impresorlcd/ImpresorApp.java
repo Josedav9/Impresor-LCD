@@ -16,14 +16,18 @@ public class ImpresorApp {
 
 	/**
 	 * Metodo main pide la entrada del usuario
-	 * y llama al metodo validar entrada
+	 * llama al metodo validar entrada para verificar los datos ingresado por el usuario
+	 * Y finalmnete llama a crearMatriz e imprimir Matriz para ver los datos
+	 * 
 	 * @param args
 	 */
 	public static void main(String[] args) {
 
+		//Estructura de datos para almacenar las entradas
 		Queue<String>cola = new LinkedList(); 
 		Scanner leer = new Scanner(System.in);
 		String entrada = "";
+		//Se leen los datos hasta que el usuario escriba 0,0
 		while(!(entrada.equalsIgnoreCase("0,0"))){
 			System.out.println("Entrada: ");
 			entrada = leer.next();
@@ -37,7 +41,9 @@ public class ImpresorApp {
 		String[] entradas;
 		String cadenaNumeros;
 		int size;
-
+		
+		//Se recorre hasta que la cola quede vacia
+		//y se crear la matriz con cada elemento de la cola
 		while(!(cola.isEmpty())){
 			try {
 				entradas = excepcion.validarEntrada(cola.poll());
